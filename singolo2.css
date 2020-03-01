@@ -151,7 +151,7 @@ h6 {
     font-family: Lato-Black;
     font-weight: 900;
     text-align: left;
-    margin-bottom: 26px;
+    margin-bottom: 27px;
 }
 
 .about__text {
@@ -161,7 +161,7 @@ h6 {
     color: #767E9E;
     font-weight: 300;
     text-align: justify;
-    margin-bottom: 47px;
+    margin-bottom: 46px;
 }
 
 .authors {
@@ -193,10 +193,11 @@ h6 {
 
 .authors__text {
     font-size: 1.2rem;
-    line-height: 2.2rem;
+    line-height: 2.1rem;
     color: #767E9E;
     font-family: Lato-Regular;
     font-weight: 400;
+    word-spacing: -.48px;
     margin-bottom: 22px;
 }
 
