@@ -249,6 +249,10 @@ h6 {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 
