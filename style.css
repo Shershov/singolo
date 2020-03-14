@@ -120,10 +120,15 @@ h6 {
 .navigation li>a {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
 }
 
 .navigation li>a:hover {
     color: #f06c64;
+}
+
+.current__link {
+    color: #3c2ad8;
 }
 
 
