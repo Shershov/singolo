@@ -1,5 +1,6 @@
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -128,7 +129,7 @@ h6 {
 }
 
 .current__link {
-    color: #3c2ad8;
+    color: #f06c64;
 }
 
 
@@ -185,6 +186,10 @@ h6 {
     cursor: pointer;
 }
 
+.left__arrow:hover {
+    background: url("assets/img/left_arr-black.png") center no-repeat;
+}
+
 .right__arrow {
     display: block;
     width: 16px;
@@ -193,10 +198,6 @@ h6 {
     margin-top: -7px;
     margin-left: auto;
     cursor: pointer;
-}
-
-.left__arrow:hover {
-    background: url("assets/img/left_arr-black.png") center no-repeat;
 }
 
 .right__arrow:hover {
