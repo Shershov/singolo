@@ -21,7 +21,7 @@
 
             </div>
             <nav class="header__nav">
-                <ul class="navigation">
+                <ul id="nav__menu" class="navigation">
                     <li><a class="current__link" href="#home__link">HOME</a></li>
                     <li><a href="#service__link">SERVICES</a></li>
                     <li><a href="#portfolio__link">PORTFOLIO</a></li>
@@ -37,11 +37,13 @@
             <a class="left__arrow"></a>
             <div class="slide__wrap">
                 <div class="slide__field">
-                    <div class="mobile">
+                    <div class="mobile iphon-vert">
                         <img class="mobile_vert" src="assets/img/mobile/iPhone Vertical.png" alt="Вертикальный смартфон">
+                        <img class="mobile_vert-blind" src="assets/img/mobile/iphone_vertical-blind.png" alt="Вертикальный смартфон">
                     </div>
                     <div class="mobile">
                         <img class="mobile_hor" src="assets/img/mobile/iPhone Horizontal.png" alt="Горизонтальный смартфон">
+                        <img class="mobile_hor-blind" src="assets/img/mobile/iphone_horisontal-blind.png" alt="Горизонтальный смартфон">
                     </div>
                 </div>
                 <div class="slide__field">
@@ -130,11 +132,11 @@
         <div class="container portfolio__inner">
             <h2 class="portfolio__title">Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <ul class="portfolio-nav">
-                <li><span>All</span></li>
-                <li><span>Web Design</span></li>
-                <li><span>Graphic Design</span></li>
-                <li><span>Artwork</span></li>
+            <ul id="portfolio__menu" class="portfolio-nav">
+                <li class="portfolio__active-link">All</li>
+                <li>Web Design</li>
+                <li>Graphic Design</li>
+                <li>Artwork</li>
             </ul>
             <div class="portfolio__wrapper">
                 <img src="assets/img/portfolio/image1.png" alt="" class="porfolio__item">

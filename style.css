@@ -121,7 +121,7 @@ h6 {
 .navigation li>a {
     cursor: pointer;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 .navigation li>a:hover {
@@ -129,7 +129,7 @@ h6 {
 }
 
 .current__link {
-    color: #f06c64;
+    color: #f06c64 !important;
 }
 
 
@@ -171,9 +171,20 @@ h6 {
     margin-top: -7px;
 }
 
+.mobile_vert-blind {
+    margin-top: -7px;
+    display: none;
+}
+
 .mobile_hor {
     margin-top: -7px;
     margin-left: 73px;
+}
+
+.mobile_hor-blind {
+    margin-top: -7px;
+    margin-left: 73px;
+    display: none;
 }
 
 .left__arrow {
@@ -322,36 +333,31 @@ h6 {
 }
 
 .portfolio-nav li {
+    display: inline-block;
     list-style-type: none;
-    padding: 0 6px;
+    padding: 0 5px;
     color: #767E9E;
     border: 1px solid #666d89;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    font-family: Lato-Regular;
+    font-weight: 400;
 }
 
 .portfolio-nav li:first-child {
     margin-left: 0;
 }
 
+.portfolio__active-link {
+    border: 1px solid #c5c5c5 !important;
+    color: #c5c5c5 !important;
+}
+
 .portfolio-nav li:hover {
     border: 1px solid #c5c5c5;
     color: #c5c5c5;
-}
-
-.portfolio-nav li span:hover {
-    color: inherit;
-}
-
-.portfolio-nav li span {
-    display: block;
-    font-size: 1.2rem;
-    line-height: 2.1rem;
-    font-family: Lato-Regular;
-    font-weight: 400;
-    color: inherit;
-    text-align-last: left;
-    vertical-align: middle;
 }
 
 .portfolio__wrapper {
