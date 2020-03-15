@@ -147,6 +147,25 @@ h6 {
     align-items: center;
 }
 
+.slide__wrap {
+    margin: 0 auto;
+}
+
+.slide__field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.slide__field:first-child {
+    display: flex;
+}
+
+.slide__field>img {
+    width: 100%;
+}
+
 .mobile_vert {
     margin-top: -7px;
 }
