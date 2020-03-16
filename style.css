@@ -136,9 +136,14 @@ h6 {
 /* slider */
 
 .slider {
-    height: 600px;
+    /* height: 600px; */
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+}
+
+.slider__next {
+    background-color: #648BF0;
+    border-bottom: 6px solid #5C81E0;
 }
 
 .phone_inner {
@@ -407,6 +412,10 @@ h6 {
 
 .porfolio__item:nth-child(n+13) {
     display: none;
+}
+
+.portfolio__item-bordered {
+    outline: solid #F06C64 5px !important;
 }
 
 
