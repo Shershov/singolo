@@ -351,9 +351,10 @@
                 <form class="quote__form" action="" method="POST">
                     <input class="form__row" type="text" name="user_name" required="required" placeholder="Name (Required)">
                     <input class="form__row" type="email" required="required" placeholder="Email (Required)">
-                    <input class="form__row" type="text" placeholder="Subject">
-                    <textarea class="form__row form__text" placeholder="Describe your project in detail" name="" id="" cols="30" rows="10"></textarea>
-                    <input class="form__row form__submit" type="submit" value="submit">
+                    <input id="subject" class="form__row" type="text" placeholder="Subject">
+                    <textarea id="description" class="form__row form__text" placeholder="Describe your project in detail" name="" id="" cols="30" rows="10"></textarea>
+                    <input id="submit__btn" class="form__row form__submit" type="submit" value="submit">
+
                 </form>
                 <div class="contact__info">
                     <h3 class="contact__info-title">Contact Information</h3>
@@ -427,6 +428,15 @@
                 </a>
             </div>
     </footer>
+    <div id="message__block" class="hidden">
+        <div id="message" class="post__message">
+            <h3 class="post__message-title">The letter was sent
+                <h3>
+                    <h4 id="subj__text" class="post__message-subj"></h4>
+                    <h4 id="descr__text" class="post__message-descr"></h4>
+                    <button id="close__btn" class="close__message-btn">OK</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 

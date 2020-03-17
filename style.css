@@ -715,3 +715,53 @@ h6 {
     height: 16px;
     fill: #656d89;
 }
+
+#message__block {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #0008;
+}
+
+#message__block.hidden {
+    display: none;
+}
+
+.post__message {
+    position: relative;
+    border: 1px solid #000;
+    background-color: #ea676b;
+    width: 25vw;
+    min-height: 25vh;
+    top: 35%;
+    left: 35%;
+    padding: 20px 15px;
+}
+
+.post__message-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #000;
+    font-family: Lato-Black;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.post__message-subj,
+.post__message-descr {
+    font-size: 1.6rem;
+    font-family: Lato-Regular;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.close__message-btn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 15px;
+    left: 45%;
+    border: 1px solid #000;
+    font-size: 1.2rem;
+}

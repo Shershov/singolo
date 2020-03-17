@@ -74,9 +74,9 @@ mobileBtnHor.onclick = function() {
 
 
 
-btnPrev.addEventListener('click', changeSliderBackGroundLeft);
+btnPrev.addEventListener('click', showBgBack);
 
-function changeSliderBackGroundLeft() {
+function showBgBack() {
     if (images[0].style.display == 'flex') {
         sliderBg.classList.remove('slider__next');
     } else {
@@ -84,9 +84,9 @@ function changeSliderBackGroundLeft() {
     }
 }
 
-btnNext.addEventListener('click', changeSliderBackGroundRight);
+btnNext.addEventListener('click', showBgForward);
 
-function changeSliderBackGroundRight() {
+function showBgForward() {
     if (images[0].style.display == 'flex') {
         sliderBg.classList.remove('slider__next');
     } else {
@@ -120,3 +120,22 @@ portfolioItems.addEventListener('click', (e) => {
     portfolioItems.querySelectorAll('img').forEach(el => el.classList.remove('portfolio__item-bordered'));
     if (e.target.tagName === 'IMG') { e.target.classList.add('portfolio__item-bordered'); }
 });
+
+// form
+
+const submitBtn = document.getElementById('submit__btn');
+const closeBtn = document.getElementById('close__btn');
+
+submitBtn.addEventListener('click', () => {
+    const subj = document.getElementById('subject').value.toString();
+    const desr = document.getElementById('description').value.toString();
+    document.getElementById('subj__text').innerText = 'Subject: ' + subj;
+    document.getElementById('descr__text').innerText = 'Description: ' + desr;
+    document.getElementById('message__block').classList.remove('hidden');
+
+})
+closeBtn.addEventListener('click', () => {
+    document.getElementById('subj__text').innerText = '';
+    document.getElementById('descr__text').innerText = '';
+    document.getElementById('message__block').classList.add('hidden');
+})
