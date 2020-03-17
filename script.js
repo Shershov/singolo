@@ -123,17 +123,21 @@ portfolioItems.addEventListener('click', (e) => {
 
 // form
 
+const form = document.getElementById('form');
+const inputName = document.getElementById('name__field');
+const inputemail = document.getElementById('email__field');
 const submitBtn = document.getElementById('submit__btn');
 const closeBtn = document.getElementById('close__btn');
 
-submitBtn.addEventListener('click', () => {
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
     const subj = document.getElementById('subject').value.toString();
     const desr = document.getElementById('description').value.toString();
-    document.getElementById('subj__text').innerText = 'Subject: ' + subj;
-    document.getElementById('descr__text').innerText = 'Description: ' + desr;
+    document.getElementById('subj__text').innerText = subj ? "Subject: " + subj : "Without subject";
+    document.getElementById('descr__text').innerText = desr ? "Description: " + subj : "Without description";
     document.getElementById('message__block').classList.remove('hidden');
-
 })
+
 closeBtn.addEventListener('click', () => {
     document.getElementById('subj__text').innerText = '';
     document.getElementById('descr__text').innerText = '';
