@@ -29,7 +29,7 @@ navMenu.addEventListener('click', (event) => {
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event) {
-	const curPos = window.scrollY;
+	const curPos = window.scrollY + 89;
 	const sections = document.querySelectorAll('section');
 	const links =  document.querySelectorAll('#nav__menu > li > a');
 
