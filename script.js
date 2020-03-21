@@ -10,7 +10,7 @@ const mobileBtnVert = document.querySelector(".mobile__btn-vert");
 const iphones2 = document.querySelectorAll(".iphon-horiz > img");
 const mobileBtnHor = document.querySelector(".mobile__btn-hor");
 
-const sliderBg = document.getElementById('slider__bg');
+
 
 const navMenu = document.getElementById('nav__menu');
 const portfolioTabs = document.querySelectorAll('#portfolio__menu > li');
@@ -26,6 +26,26 @@ navMenu.addEventListener('click', (event) => {
 })
 
 
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event) {
+	const curPos = window.scrollY;
+	const sections = document.querySelectorAll('section');
+	const links =  document.querySelectorAll('#nav__menu > li > a');
+
+
+	sections.forEach((el) => {
+		if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+	links.forEach((a) => {
+		a.classList.remove('current__link');
+		if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+			a.classList.add('current__link');
+		}
+	})
+}
+
+	})
+}
 
 
 // slider
