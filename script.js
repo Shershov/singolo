@@ -340,11 +340,11 @@ portfolioItems.addEventListener('click', (e) => {
 // form
 
 const form = document.getElementById('form');
-const messageBlock = document.querySelectorAll('#message__block')[0];
 const inputName = document.getElementById('name__field');
 const inputemail = document.getElementById('email__field');
 const submitBtn = document.getElementById('submit__btn');
 const closeBtn = document.getElementById('close__btn');
+
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -361,9 +361,11 @@ closeBtn.addEventListener('click', () => {
     document.getElementById('message__block').classList.add('hidden');
 })
 
-closeBtn.addEventListener('click', closeModal, false);
+//закрытие диалогового окна и очистка инпутов
+closeBtn.addEventListener('click', function () {
+	document.getElementById('name__field').value = '';
+	document.getElementById('email__field').value = '';
+	document.getElementById('subject').value = '';
+	document.getElementById('description').value = '';
 
-function closeModal(e){
-    messageBlock.style.visibility="hidden";
-    form.reset();
-}
+})
