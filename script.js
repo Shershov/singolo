@@ -15,7 +15,7 @@ const mobileBtnHor = document.querySelector(".mobile__btn-hor");
 const navMenu = document.getElementById('nav__menu');
 const portfolioTabs = document.querySelectorAll('#portfolio__menu > li');
 const portfolioItems = document.getElementById("portfolio__items");
-const portfolioImgItems = document.querySelectorAll('.porfolio__item');
+const portfolioImgItems = document.querySelectorAll('.portfolio__wrapper > div');
 
 // heder nav
 
